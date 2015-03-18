@@ -1,6 +1,8 @@
 {
   "name": "StartupTemplate",
   "dependencies": {
+    "ember": "1.11.0-beta.5",
+    "ember-data": "1.0.0-beta.15",
     "es6-module-loader": "0.14.0",
     "jquery": "2.1.3",
     "rails-behaviors": "0.8.3",
