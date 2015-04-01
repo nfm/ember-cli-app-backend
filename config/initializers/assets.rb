@@ -12,5 +12,5 @@ Rails.application.config.assets.version = '1.0'
 
 # Use system-js for Sprockets ES6 modules
 Rails.application.config.assets.configure do |env|
-  env.register_transformer 'text/ecmascript-6', 'application/javascript', Sprockets::ES6.new('modules' => 'system', 'moduleIds' => true)
+  env.register_transformer 'text/ecmascript-6', 'application/javascript', Sprockets::ES6.new('modules' => 'system', 'moduleIds' => true, 'loose' => ["es6.modules"])
 end
