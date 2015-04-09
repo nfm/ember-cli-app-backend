@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get 'site/index'
+  namespace :api do
+    resources :clients
+  end
 
-  root 'site#index'
+  root to: 'site#index'
+  get '*fallback' => 'site#index'
 end
